@@ -1,0 +1,65 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://json.schemastore.org/sarif-2.1.0.json",
+  "runs": [
+    {
+      "properties": {
+        "id": 157420,
+        "version": "1.0.0",
+        "type": "source code",
+        "status": "candidate",
+        "submissionDate": "2015-10-20",
+        "language": "php",
+        "author": "Bertrand Stivalet and Aurelien Delaitre",
+        "description": "Safe sample\ninput : get the field userData from the variable $_GET via an object, which store it in a array\nsanitize : use of ternary condition\nconstruction : right verification",
+        "state": "good"
+      },
+      "tool": {
+        "driver": {
+          "name": "SARD - SAMATE",
+          "fullName": "Software Assurance Reference Dataset Project",
+          "informationUri": "https://samate.nist.gov/SARD/",
+          "version": "5.0.0",
+          "organization": "NIST",
+          "supportedTaxonomies": [
+            {
+              "name": "CWE",
+              "index": 0
+            }
+          ]
+        }
+      },
+      "artifacts": [
+        {
+          "location": {
+            "uri": "src/CWE_862_SQL__object-Array__ternary_white_list__non_prepared_query-right_verification.php"
+          },
+          "length": 1828,
+          "sourceLanguage": "php",
+          "hashes": {
+            "sha-256": "e10251d1579e45b7130299bdfc0048e7f43f2bd20b1263736ae97fd2e4fd79c3"
+          }
+        }
+      ],
+      "taxonomies": [
+        {
+          "name": "CWE",
+          "version": "4.6",
+          "informationUri": "https://cwe.mitre.org/data/published/cwe_v4.6.pdf",
+          "downloadUri": "https://cwe.mitre.org/data/xml/cwec_v4.6.xml.zip",
+          "organization": "MITRE",
+          "shortDescription": {
+            "text": "The MITRE Common Weakness Enumeration"
+          },
+          "isComprehensive": false,
+          "taxa": [
+
+          ]
+        }
+      ],
+      "results": [
+
+      ]
+    }
+  ]
+}
