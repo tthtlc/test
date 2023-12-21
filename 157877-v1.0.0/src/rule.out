@@ -1,0 +1,18 @@
+                   
+                   
+┌─────────────────┐
+│ 2 Code Findings │
+└─────────────────┘
+                                                                                
+    /src/157877-v1.0.0/src/CWE_95__backticks__func_FILTER-CLEANING-number_int_fi
+  lter__variable-concatenation_simple_quote.php                                 
+       myrule.semgrep-rules_php.lang.security.backticks-use           
+          Backticks use may lead to command injection vulnerabilities.
+                                                                      
+            8┆ $tainted = `cat /tmp/tainted.txt`;
+            ⋮┆----------------------------------------
+       myrule.semgrep-rules_php.lang.security.eval-use                         
+          Evaluating non-constant commands. This can lead to command injection.
+                                                                               
+           15┆ $res = eval($query);
+

@@ -1,0 +1,19 @@
+                  
+                  
+┌────────────────┐
+│ 1 Code Finding │
+└────────────────┘
+                                                                                
+    /src/166966-v1.0.0/src/CWE_98__POST__func_floatval__include_file_id-interpre
+  tation_simple_quote.php                                                       
+       myrule.semgrep-rules_php.lang.security.file-inclusion                    
+          Detected non-constant file inclusion. This can lead to local file     
+  inclusion (LFI) or remote                                                     
+          file inclusion (RFI) if user input reaches this statement. LFI and RFI
+  could lead to                                                                 
+          sensitive files being obtained by attackers. Instead, explicitly      
+  specify what to include. If                                                   
+          that is not a viable solution, validate user input thoroughly.        
+                                                                                
+           10┆ $var = include("pages/'$tainted'.php");
+

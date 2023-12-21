@@ -1,0 +1,14 @@
+                  
+                  
+┌────────────────┐
+│ 1 Code Finding │
+└────────────────┘
+                                                                   
+    /rootsrc/CWE_91__GET__no_sanitizing__ID_test-concatenation.php 
+       myrule.lang.security.injection.echoed-request                            
+          `Echo`ing user input risks cross-site scripting vulnerability. You    
+  should use                                                                    
+          `htmlentities()` when showing data to users.                          
+                                                                                
+           13┆ echo "query : ". $query ."<br /><br />" ;
+

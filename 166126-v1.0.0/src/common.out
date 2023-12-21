@@ -1,0 +1,27 @@
+                   
+                   
+┌─────────────────┐
+│ 2 Code Findings │
+└─────────────────┘
+                                                                                
+    /src/166126-v1.0.0/src/CWE_95__POST__func_FILTER-CLEANING-full_special_chars
+  _filter__echo-sprintf_%s_simple_quote.php                                     
+       myrule.common.tainted-command-injection                                  
+          An attacker can execute arbitrary commands, potentially gaining       
+  complete control of the                                                       
+          system. To prevent this vulnerability, avoid executing OS commands    
+  with user input. If this                                                      
+          is unavoidable, validate and sanitize the user input, and use safe    
+  methods for executing the                                                     
+          commands. In PHP, it is possible to use `escapeshellcmd(...)` and     
+  `escapeshellarg(...)` to                                                      
+          correctly sanitize input that is used respectively as system commands 
+  or command arguments.                                                         
+                                                                                
+           14┆ $res = eval($query);
+            ⋮┆----------------------------------------
+       myrule.common.xss-echoed-request       
+          Potential XSS vulnerability detected
+                                              
+           14┆ $res = eval($query);
+

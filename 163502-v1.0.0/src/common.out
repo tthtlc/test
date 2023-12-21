@@ -1,0 +1,15 @@
+                   
+                   
+┌─────────────────┐
+│ 2 Code Findings │
+└─────────────────┘
+                                                                                
+    /src/163502-v1.0.0/src/CWE_89__GET__func_addslashes__join-concatenation_simp
+  le_quote.php                                                                  
+       myrule.common.xss-echoed-request       
+          Potential XSS vulnerability detected
+                                              
+           13┆ echo "query : ". $query ."<br /><br />" ;
+            ⋮┆----------------------------------------
+           16┆ print_r($data) ;
+

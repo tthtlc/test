@@ -1,0 +1,15 @@
+                   
+                   
+┌─────────────────┐
+│ 2 Code Findings │
+└─────────────────┘
+                                                                                
+    /rootsrc/CWE_91__GET__func_mysql_real_escape_string__ID_at-sprintf_%s_simple
+  _quote.php                                                                    
+       myrule.xss-echoed-request              
+          Potential XSS vulnerability detected
+                                              
+           12┆ echo "query : ". $query ."<br /><br />" ;
+            ⋮┆----------------------------------------
+           14┆ print_r($res);
+

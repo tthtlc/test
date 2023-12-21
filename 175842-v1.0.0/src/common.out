@@ -1,0 +1,15 @@
+                   
+                   
+┌─────────────────┐
+│ 2 Code Findings │
+└─────────────────┘
+                                                                                
+    /src/175842-v1.0.0/src/CWE_91__unserialize__whitelist_using_array__username_
+  text-interpretation_simple_quote.php                                          
+       myrule.common.xss-echoed-request       
+          Potential XSS vulnerability detected
+                                              
+           19┆ echo "query : ". $query ."<br /><br />" ;
+            ⋮┆----------------------------------------
+           21┆ print_r($res);
+

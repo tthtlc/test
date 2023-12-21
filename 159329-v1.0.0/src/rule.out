@@ -1,0 +1,13 @@
+                  
+                  
+┌────────────────┐
+│ 1 Code Finding │
+└────────────────┘
+                                                                                
+    /src/159329-v1.0.0/src/CWE_78__exec__func_preg_match-no_filtering__ls-concat
+  enation_simple_quote.php                                                      
+       myrule.semgrep-rules_php.lang.security.exec-use                        
+          Executing non-constant commands. This can lead to command injection.
+                                                                              
+           20┆ $ret = system($query);
+

@@ -1,0 +1,15 @@
+                  
+                  
+┌────────────────┐
+│ 1 Code Finding │
+└────────────────┘
+                                                                                
+    /src/160507-v1.0.0/src/CWE_90__exec__func_preg_replace__name-sprintf_%s_simp
+  le_quote.php                                                                  
+       myrule.common.php-hardcoded-credentials
+          Hardcoded credentials detected      
+                                              
+           ▶▶┆ Autofix ▶ Use environment variables or other secure methods to   
+  handle credentials                                                            
+            8┆ $script = "/tmp/tainted.php";
+

@@ -1,0 +1,23 @@
+                   
+                   
+┌─────────────────┐
+│ 3 Code Findings │
+└─────────────────┘
+                                                                                
+    /src/182385-v1.0.0/src/CWE_98__object-indexArray__ternary_white_list__includ
+  e_file_name-sprintf_%s_simple_quote.php                                       
+       myrule.common.php-hardcoded-credentials
+          Hardcoded credentials detected      
+                                              
+           ▶▶┆ Autofix ▶ Use environment variables or other secure methods to   
+  handle credentials                                                            
+           15┆ $this->input['test']= 'safe' ;
+            ⋮┆----------------------------------------
+           ▶▶┆ Autofix ▶ Use environment variables or other secure methods to   
+  handle credentials                                                            
+           17┆ $this->input['trap']= 'safe' ;
+            ⋮┆----------------------------------------
+           ▶▶┆ Autofix ▶ Use environment variables or other secure methods to   
+  handle credentials                                                            
+           22┆ $tainted = $tainted  == 'safe1' ? 'safe1' : 'safe2';
+

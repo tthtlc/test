@@ -1,0 +1,13 @@
+                  
+                  
+┌────────────────┐
+│ 1 Code Finding │
+└────────────────┘
+                                                                                
+    /src/187579-v1.0.0/src/CWE_601__unserialize__func_preg_replace__header_file_
+  name-interpretation_simple_quote.php                                          
+       myrule.common.xss-echoed-request       
+          Potential XSS vulnerability detected
+                                              
+           13┆ $var = header("Location: '$tainted'.php");
+

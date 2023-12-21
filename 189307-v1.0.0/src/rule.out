@@ -1,0 +1,13 @@
+                  
+                  
+┌────────────────┐
+│ 1 Code Finding │
+└────────────────┘
+                                                                                
+    /rootsrc/CWE_79__backticks__func_FILTER-VALIDATION-number_float_filter__Use_
+  untrusted_data_propertyValue_CSS-property_Value.php                           
+       myrule.lang.security.backticks-use                             
+          Backticks use may lead to command injection vulnerabilities.
+                                                                      
+           12┆ $tainted = `cat /tmp/tainted.txt`;
+

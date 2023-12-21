@@ -1,0 +1,14 @@
+                  
+                  
+┌────────────────┐
+│ 1 Code Finding │
+└────────────────┘
+                                                                                
+    /src/179356-v1.0.0/src/CWE_78__object-Array__func_preg_match-only_numbers__f
+  ind_size-sprintf_%s_simple_quote.php                                          
+       php.lang.security.exec-use.exec-use                                    
+          Executing non-constant commands. This can lead to command injection.
+          Details: https://sg.run/5Q1j                                        
+                                                                              
+           30┆ $ret = system($query);
+

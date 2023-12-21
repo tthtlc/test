@@ -1,0 +1,13 @@
+                  
+                  
+┌────────────────┐
+│ 1 Code Finding │
+└────────────────┘
+                                                                                
+    /src/158962-v1.0.0/src/CWE_89__backticks__ternary_white_list__multiple_selec
+  t-sprintf_%u_simple_quote.php                                                 
+       myrule.semgrep-rules_php.lang.security.backticks-use           
+          Backticks use may lead to command injection vulnerabilities.
+                                                                      
+            8┆ $tainted = `cat /tmp/tainted.txt`;
+

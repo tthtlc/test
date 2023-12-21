@@ -1,0 +1,15 @@
+                  
+                  
+┌────────────────┐
+│ 1 Code Finding │
+└────────────────┘
+                                                                                
+    /rootsrc/CWE_90__array-GET__func_htmlspecialchars__name-sprintf_%s_simple_qu
+  ote.php                                                                       
+       myrule.lang.security.ldap-bind-without-password                          
+          Detected anonymous LDAP bind. This permits anonymous users to execute 
+  LDAP statements.                                                              
+          Consider enforcing authentication for LDAP.                           
+                                                                                
+           17┆ $r=ldap_bind($ds);
+

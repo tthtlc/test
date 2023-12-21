@@ -1,0 +1,96 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://json.schemastore.org/sarif-2.1.0.json",
+  "runs": [
+    {
+      "properties": {
+        "id": 187222,
+        "version": "1.0.0",
+        "type": "source code",
+        "status": "candidate",
+        "submissionDate": "2015-10-20",
+        "language": "php",
+        "author": "Bertrand Stivalet and Aurelien Delaitre",
+        "description": "Unsafe sample\ninput : execute a ls command using the function system, and put the last result in $tainted\nsanitize : none\nconstruction : use of sprintf via a %s with simple quote",
+        "state": "bad"
+      },
+      "tool": {
+        "driver": {
+          "name": "SARD - SAMATE",
+          "fullName": "Software Assurance Reference Dataset Project",
+          "informationUri": "https://samate.nist.gov/SARD/",
+          "version": "5.0.0",
+          "organization": "NIST",
+          "supportedTaxonomies": [
+            {
+              "name": "CWE",
+              "index": 0
+            }
+          ]
+        }
+      },
+      "artifacts": [
+        {
+          "location": {
+            "uri": "src/CWE_601__system__no_sanitizing__http_redirect_file_name-sprintf_%s_simple_quote.php"
+          },
+          "length": 1221,
+          "sourceLanguage": "php",
+          "hashes": {
+            "sha-256": "39f8ad2336e50f7a5ca60c0d4094e6c96e654c0582c5f2013abe0ee34c5a0cee"
+          }
+        }
+      ],
+      "taxonomies": [
+        {
+          "name": "CWE",
+          "version": "4.6",
+          "informationUri": "https://cwe.mitre.org/data/published/cwe_v4.6.pdf",
+          "downloadUri": "https://cwe.mitre.org/data/xml/cwec_v4.6.xml.zip",
+          "organization": "MITRE",
+          "shortDescription": {
+            "text": "The MITRE Common Weakness Enumeration"
+          },
+          "isComprehensive": false,
+          "taxa": [
+            {
+              "id": "601",
+              "name": "URL Redirection to Untrusted Site ('Open Redirect')"
+            }
+          ]
+        }
+      ],
+      "results": [
+        {
+          "ruleId": "CWE-601",
+          "message": {
+            "text": "URL Redirection to Untrusted Site ('Open Redirect')."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/CWE_601__system__no_sanitizing__http_redirect_file_name-sprintf_%s_simple_quote.php",
+                  "index": 0
+                },
+                "region": {
+                  "startLine": 51
+                }
+              }
+            }
+          ],
+          "taxa": [
+            {
+              "toolComponent": {
+                "name": "CWE",
+                "index": 0
+              },
+              "id": "601",
+              "index": 0
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

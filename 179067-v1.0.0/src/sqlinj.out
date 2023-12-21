@@ -1,0 +1,16 @@
+                  
+                  
+┌────────────────┐
+│ 1 Code Finding │
+└────────────────┘
+                                                                                
+    /src/179067-v1.0.0/src/CWE_89__object-classicGet__ternary_white_list__select
+  _from-interpretation_simple_quote.php                                         
+       myrule.sqlinj.sql-injection-php-potential-apps3c                         
+          Detected a string starting with a SQL operation with a concatenated   
+  value. This could lead                                                        
+          to SQL injection if variables in the SQL  statement are not properly  
+  sanitized.                                                                    
+                                                                                
+           20┆ $query = "SELECT * FROM ' $tainted '";
+

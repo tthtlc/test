@@ -1,0 +1,13 @@
+                  
+                  
+┌────────────────┐
+│ 1 Code Finding │
+└────────────────┘
+                                                                                
+    /rootsrc/CWE_78__object-indexArray__whitelist_using_array__cat-concatenation
+  _simple_quote.php                                                             
+       myrule.lang.security.exec-use                                          
+          Executing non-constant commands. This can lead to command injection.
+                                                                              
+           29┆ $ret = system($query);
+

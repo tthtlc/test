@@ -1,0 +1,23 @@
+                   
+                   
+┌─────────────────┐
+│ 2 Code Findings │
+└─────────────────┘
+                                                                                
+    /src/175061-v1.0.0/src/CWE_91__unserialize__CAST-cast_int_sort_of__ID_test-i
+  nterpretation_simple_quote.php                                                
+       myrule.semgrep-rules_php.lang.security.unserialize-use                   
+          Calling `unserialize()` with user input in the pattern can lead to    
+  arbitrary code execution.                                                     
+          Consider using JSON or structured data approaches (e.g. Google        
+  Protocol Buffers).                                                            
+                                                                                
+            9┆ $tainted = unserialize($string);
+            ⋮┆----------------------------------------
+       myrule.semgrep-rules_php.lang.security.injection.echoed-request          
+          `Echo`ing user input risks cross-site scripting vulnerability. You    
+  should use                                                                    
+          `htmlentities()` when showing data to users.                          
+                                                                                
+           14┆ echo "query : ". $query ."<br /><br />" ;
+

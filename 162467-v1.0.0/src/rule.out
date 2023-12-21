@@ -1,0 +1,15 @@
+                  
+                  
+┌────────────────┐
+│ 1 Code Finding │
+└────────────────┘
+                                                                                
+    /rootsrc/CWE_90__fopen__func_str_replace_ldap_char_black_list__userByMail-co
+  ncatenation_simple_quote.php                                                  
+       myrule.lang.security.ldap-bind-without-password                          
+          Detected anonymous LDAP bind. This permits anonymous users to execute 
+  LDAP statements.                                                              
+          Consider enforcing authentication for LDAP.                           
+                                                                                
+           25┆ $r=ldap_bind($ds);
+

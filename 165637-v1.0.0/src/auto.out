@@ -1,0 +1,14 @@
+                  
+                  
+┌────────────────┐
+│ 1 Code Finding │
+└────────────────┘
+                                                                                
+    /src/165637-v1.0.0/src/CWE_78__popen__ternary_white_list__cat-sprintf_%s_sim
+  ple_quote.php                                                                 
+       php.lang.security.exec-use.exec-use                                    
+          Executing non-constant commands. This can lead to command injection.
+          Details: https://sg.run/5Q1j                                        
+                                                                              
+           13┆ $ret = system($query);
+

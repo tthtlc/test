@@ -1,0 +1,15 @@
+                  
+                  
+┌────────────────┐
+│ 1 Code Finding │
+└────────────────┘
+                                                                                
+    /rootsrc/CWE_90__SESSION__ternary_white_list__userByMail-concatenation_simpl
+  e_quote.php                                                                   
+       myrule.lang.security.ldap-bind-without-password                          
+          Detected anonymous LDAP bind. This permits anonymous users to execute 
+  LDAP statements.                                                              
+          Consider enforcing authentication for LDAP.                           
+                                                                                
+           12┆ $r=ldap_bind($ds);
+

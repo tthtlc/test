@@ -1,0 +1,15 @@
+                  
+                  
+┌────────────────┐
+│ 1 Code Finding │
+└────────────────┘
+                                                                                
+    /src/162947-v1.0.0/src/CWE_91__GET__func_FILTER-CLEANING-number_int_filter__
+  ID_at-sprintf_%s_simple_quote.php                                             
+       myrule.semgrep-rules_php.lang.security.injection.echoed-request          
+          `Echo`ing user input risks cross-site scripting vulnerability. You    
+  should use                                                                    
+          `htmlentities()` when showing data to users.                          
+                                                                                
+           16┆ echo "query : ". $query ."<br /><br />" ;
+

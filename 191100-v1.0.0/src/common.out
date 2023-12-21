@@ -1,0 +1,13 @@
+                  
+                  
+┌────────────────┐
+│ 1 Code Finding │
+└────────────────┘
+                                                                                
+    /src/191100-v1.0.0/src/CWE_79__GET__func_FILTER-CLEANING-number_float_filter
+  __Unsafe_use_untrusted_data-style.php                                         
+       myrule.common.xss-echoed-request       
+          Potential XSS vulnerability detected
+                                              
+           19┆ echo $tainted ;
+

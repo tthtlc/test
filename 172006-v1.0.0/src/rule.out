@@ -1,0 +1,13 @@
+                  
+                  
+┌────────────────┐
+│ 1 Code Finding │
+└────────────────┘
+                                                                                
+    /src/172006-v1.0.0/src/CWE_78__shell_exec__func_floatval__find_size-sprintf_
+  %s_simple_quote.php                                                           
+       myrule.semgrep-rules_php.lang.security.exec-use                        
+          Executing non-constant commands. This can lead to command injection.
+                                                                              
+           11┆ $ret = system($query);
+

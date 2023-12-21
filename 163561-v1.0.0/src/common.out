@@ -1,0 +1,15 @@
+                   
+                   
+┌─────────────────┐
+│ 2 Code Findings │
+└─────────────────┘
+                                                                                
+    /src/163561-v1.0.0/src/CWE_89__GET__no_sanitizing__select_from_where-interpr
+  etation.php                                                                   
+       myrule.common.xss-echoed-request       
+          Potential XSS vulnerability detected
+                                              
+           14┆ echo "query : ". $query ."<br /><br />" ;
+            ⋮┆----------------------------------------
+           17┆ print_r($data) ;
+

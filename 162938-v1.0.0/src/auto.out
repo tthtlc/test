@@ -1,0 +1,27 @@
+                  
+                  
+┌────────────────┐
+│ 1 Code Finding │
+└────────────────┘
+                                                                                
+    /src/162938-v1.0.0/src/CWE_89__GET__func_FILTER-CLEANING-number_int_filter__
+  multiple_AS-sprintf_%s_simple_quote.php                                       
+       php.lang.security.injection.tainted-sql-string.tainted-sql-string        
+          User data flows into this manually-constructed SQL string. User data  
+  can be safely inserted                                                        
+          into SQL strings using prepared statements or an object-relational    
+  mapper (ORM). Manually-                                                       
+          constructed SQL strings is a possible indicator of SQL injection,     
+  which could let an                                                            
+          attacker steal or manipulate data from the database. Instead, use     
+  prepared statements                                                           
+          (`$mysqli->prepare("INSERT INTO test(id, label) VALUES (?, ?)");`) or 
+  a safe library.                                                               
+          Details: https://sg.run/lZYG                                          
+                                                                                
+           14┆  ... sprintf("SELECT Trim(a.FirstName) & ' ' & Trim(a.LastName)  
+  AS employee_name, a.city, a.street & (' ' +a.housenum) AS address FROM        
+  Employees AS a  WHERE a.superv ... [0m                                        
+            [shortened a long line from output, adjust with                     
+  --max-chars-per-line]                                                         
+

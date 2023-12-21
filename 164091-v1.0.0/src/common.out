@@ -1,0 +1,15 @@
+                   
+                   
+┌─────────────────┐
+│ 2 Code Findings │
+└─────────────────┘
+                                                                                
+    /src/164091-v1.0.0/src/CWE_89__GET__whitelist_using_array__multiple_AS-conca
+  tenation_simple_quote.php                                                     
+       myrule.common.xss-echoed-request       
+          Potential XSS vulnerability detected
+                                              
+           18┆ echo "query : ". $query ."<br /><br />" ;
+            ⋮┆----------------------------------------
+           21┆ print_r($data) ;
+

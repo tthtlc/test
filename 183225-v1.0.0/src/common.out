@@ -1,0 +1,23 @@
+                   
+                   
+┌─────────────────┐
+│ 3 Code Findings │
+└─────────────────┘
+                                                                                
+    /src/183225-v1.0.0/src/CWE_89__array-GET__func_FILTER-VALIDATION-number_int_
+  filter__select_from_where-concatenation_simple_quote.php                      
+       myrule.common.php-hardcoded-credentials
+          Hardcoded credentials detected      
+                                              
+           ▶▶┆ Autofix ▶ Use environment variables or other secure methods to   
+  handle credentials                                                            
+            9┆ $array[] = 'safe' ;
+            ⋮┆----------------------------------------
+           ▶▶┆ Autofix ▶ Use environment variables or other secure methods to   
+  handle credentials                                                            
+           11┆ $array[] = 'safe' ;
+            ⋮┆----------------------------------------
+           ▶▶┆ Autofix ▶ Use environment variables or other secure methods to   
+  handle credentials                                                            
+           16┆ $tainted = "" ;
+

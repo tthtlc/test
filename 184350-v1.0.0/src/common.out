@@ -1,0 +1,19 @@
+                   
+                   
+┌─────────────────┐
+│ 2 Code Findings │
+└─────────────────┘
+                                                                                
+    /src/184350-v1.0.0/src/CWE_601__backticks__func_preg_match-letters_numbers__
+  http_redirect_url-concatenation_simple_quote.php                              
+       myrule.common.php-hardcoded-credentials
+          Hardcoded credentials detected      
+                                              
+           ▶▶┆ Autofix ▶ Use environment variables or other secure methods to   
+  handle credentials                                                            
+            9┆ $re = "/^[a-zA-Z0-9]*$/";
+            ⋮┆----------------------------------------
+           ▶▶┆ Autofix ▶ Use environment variables or other secure methods to   
+  handle credentials                                                            
+           14┆ $tainted = "";
+

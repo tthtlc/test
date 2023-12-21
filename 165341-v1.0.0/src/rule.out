@@ -1,0 +1,13 @@
+                  
+                  
+┌────────────────┐
+│ 1 Code Finding │
+└────────────────┘
+                                                                                
+    /src/165341-v1.0.0/src/CWE_95__popen__func_htmlentities__echo-concatenation_
+  simple_quote.php                                                              
+       myrule.semgrep-rules_php.lang.security.eval-use                         
+          Evaluating non-constant commands. This can lead to command injection.
+                                                                               
+           13┆ $res = eval($query);
+

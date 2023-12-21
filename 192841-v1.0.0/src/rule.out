@@ -1,0 +1,15 @@
+                  
+                  
+┌────────────────┐
+│ 1 Code Finding │
+└────────────────┘
+                                                                                
+    /src/192841-v1.0.0/src/CWE_79__POST__whitelist_using_array__Unsafe_use_untru
+  sted_data-attribute_Name.php                                                  
+       myrule.semgrep-rules_php.lang.security.injection.echoed-request          
+          `Echo`ing user input risks cross-site scripting vulnerability. You    
+  should use                                                                    
+          `htmlentities()` when showing data to users.                          
+                                                                                
+           19┆ echo "<div ". $tainted ."= bob />" ;
+

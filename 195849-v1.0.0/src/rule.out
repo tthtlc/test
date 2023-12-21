@@ -1,0 +1,16 @@
+                  
+                  
+┌────────────────┐
+│ 1 Code Finding │
+└────────────────┘
+                                                                                
+    /src/195849-v1.0.0/src/CWE_79__unserialize__func_htmlentities__Use_untrusted
+  _data_attribute-unquoted_Attr.php                                             
+       myrule.semgrep-rules_php.lang.security.unserialize-use                   
+          Calling `unserialize()` with user input in the pattern can lead to    
+  arbitrary code execution.                                                     
+          Consider using JSON or structured data approaches (e.g. Google        
+  Protocol Buffers).                                                            
+                                                                                
+           13┆ $tainted = unserialize($string);
+

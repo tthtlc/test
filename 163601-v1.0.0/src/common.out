@@ -1,0 +1,14 @@
+                   
+                   
+┌─────────────────┐
+│ 2 Code Findings │
+└─────────────────┘
+                                                                   
+    /rootsrc/CWE_91__GET__no_sanitizing__ID_test-concatenation.php 
+       myrule.xss-echoed-request              
+          Potential XSS vulnerability detected
+                                              
+           13┆ echo "query : ". $query ."<br /><br />" ;
+            ⋮┆----------------------------------------
+           15┆ print_r($res);
+

@@ -1,0 +1,13 @@
+                  
+                  
+┌────────────────┐
+│ 1 Code Finding │
+└────────────────┘
+                                                                                
+    /src/183558-v1.0.0/src/CWE_78__array-GET__CAST-func_settype_int__find_size-i
+  nterpretation_simple_quote.php                                                
+       myrule.semgrep-rules_php.lang.security.exec-use                        
+          Executing non-constant commands. This can lead to command injection.
+                                                                              
+           18┆ $ret = system($query);
+

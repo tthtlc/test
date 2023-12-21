@@ -1,0 +1,17 @@
+                  
+                  
+┌────────────────┐
+│ 1 Code Finding │
+└────────────────┘
+                                                                                
+    /src/168601-v1.0.0/src/CWE_89__proc_open__no_sanitizing__multiple_select-int
+  erpretation.php                                                               
+       myrule.sqlinj.sql-injection-php-potential-apps3c                         
+          Detected a string starting with a SQL operation with a concatenated   
+  value. This could lead                                                        
+          to SQL injection if variables in the SQL  statement are not properly  
+  sanitized.                                                                    
+                                                                                
+           22┆ $query = "SELECT * FROM COURSE c WHERE c.id IN (SELECT idcourse  
+  FROM REGISTRATION WHERE idstudent= $tainted )";                               
+

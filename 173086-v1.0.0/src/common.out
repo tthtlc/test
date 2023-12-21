@@ -1,0 +1,15 @@
+                  
+                  
+┌────────────────┐
+│ 1 Code Finding │
+└────────────────┘
+                                                                                
+    /src/173086-v1.0.0/src/CWE_89__system__func_FILTER-VALIDATION-email_filter__
+  select_from-sprintf_%s_simple_quote.php                                       
+       myrule.common.php-hardcoded-credentials
+          Hardcoded credentials detected      
+                                              
+           ▶▶┆ Autofix ▶ Use environment variables or other secure methods to   
+  handle credentials                                                            
+           12┆ $tainted = "" ;
+

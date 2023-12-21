@@ -1,0 +1,15 @@
+                   
+                   
+┌─────────────────┐
+│ 2 Code Findings │
+└─────────────────┘
+                                                                                
+    /rootsrc/CWE_89__unserialize__func_FILTER-CLEANING-email_filter__select_from
+  -sprintf_%s_simple_quote.php                                                  
+       myrule.xss-echoed-request              
+          Potential XSS vulnerability detected
+                                              
+           20┆ echo "query : ". $query ."<br /><br />" ;
+            ⋮┆----------------------------------------
+           23┆ print_r($data) ;
+

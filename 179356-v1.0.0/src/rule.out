@@ -1,0 +1,13 @@
+                  
+                  
+┌────────────────┐
+│ 1 Code Finding │
+└────────────────┘
+                                                                                
+    /src/179356-v1.0.0/src/CWE_78__object-Array__func_preg_match-only_numbers__f
+  ind_size-sprintf_%s_simple_quote.php                                          
+       myrule.semgrep-rules_php.lang.security.exec-use                        
+          Executing non-constant commands. This can lead to command injection.
+                                                                              
+           30┆ $ret = system($query);
+

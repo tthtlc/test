@@ -1,0 +1,19 @@
+                  
+                  
+┌────────────────┐
+│ 1 Code Finding │
+└────────────────┘
+                                                                                
+    /src/163520-v1.0.0/src/CWE_98__GET__no_sanitizing__require_file_name-interpr
+  etation_simple_quote.php                                                      
+       myrule.semgrep-rules_php.lang.security.file-inclusion                    
+          Detected non-constant file inclusion. This can lead to local file     
+  inclusion (LFI) or remote                                                     
+          file inclusion (RFI) if user input reaches this statement. LFI and RFI
+  could lead to                                                                 
+          sensitive files being obtained by attackers. Instead, explicitly      
+  specify what to include. If                                                   
+          that is not a viable solution, validate user input thoroughly.        
+                                                                                
+           11┆ $var = require("'$tainted'.php");
+

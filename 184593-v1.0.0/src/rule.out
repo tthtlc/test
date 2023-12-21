@@ -1,0 +1,23 @@
+                   
+                   
+┌─────────────────┐
+│ 2 Code Findings │
+└─────────────────┘
+                                                                                
+    /rootsrc/CWE_601__backticks__func_preg_replace2__header_file_name-sprintf_%s
+  _simple_quote.php                                                             
+       myrule.lang.security.backticks-use                             
+          Backticks use may lead to command injection vulnerabilities.
+                                                                      
+            8┆ $tainted = `cat /tmp/tainted.txt`;
+            ⋮┆----------------------------------------
+       myrule.lang.security.non-literal-header                                  
+          Using user input when setting headers with `header()` is potentially  
+  dangerous. This could                                                         
+          allow an attacker to inject a new line and add a new header into the  
+  response. This is                                                             
+          called HTTP response splitting. To fix, do not allow whitespace inside
+  `header()`: '[^\s]+'.                                                         
+                                                                                
+           10┆ $var = header(sprintf("Location: '%s'.php", $tainted));
+

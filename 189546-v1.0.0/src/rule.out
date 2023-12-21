@@ -1,0 +1,13 @@
+                  
+                  
+┌────────────────┐
+│ 1 Code Finding │
+└────────────────┘
+                                                                                
+    /src/189546-v1.0.0/src/CWE_79__backticks__func_htmlentities__Unsafe_use_untr
+  usted_data-style.php                                                          
+       myrule.semgrep-rules_php.lang.security.backticks-use           
+          Backticks use may lead to command injection vulnerabilities.
+                                                                      
+           12┆ $tainted = `cat /tmp/tainted.txt`;
+

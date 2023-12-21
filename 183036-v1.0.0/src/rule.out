@@ -1,0 +1,13 @@
+                  
+                  
+┌────────────────┐
+│ 1 Code Finding │
+└────────────────┘
+                                                                                
+    /rootsrc/CWE_78__array-GET__func_FILTER-CLEANING-number_int_filter__find_siz
+  e-interpretation_simple_quote.php                                             
+       myrule.lang.security.exec-use                                          
+          Executing non-constant commands. This can lead to command injection.
+                                                                              
+           19┆ $ret = system($query);
+

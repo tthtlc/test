@@ -1,0 +1,14 @@
+                  
+                  
+┌────────────────┐
+│ 1 Code Finding │
+└────────────────┘
+                                                                                
+    /src/160696-v1.0.0/src/CWE_78__exec__whitelist_using_array__ls-sprintf_%s_si
+  mple_quote.php                                                                
+       php.lang.security.exec-use.exec-use                                    
+          Executing non-constant commands. This can lead to command injection.
+          Details: https://sg.run/5Q1j                                        
+                                                                              
+           18┆ $ret = system($query);
+

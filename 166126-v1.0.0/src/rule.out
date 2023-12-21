@@ -1,0 +1,13 @@
+                  
+                  
+┌────────────────┐
+│ 1 Code Finding │
+└────────────────┘
+                                                                                
+    /src/166126-v1.0.0/src/CWE_95__POST__func_FILTER-CLEANING-full_special_chars
+  _filter__echo-sprintf_%s_simple_quote.php                                     
+       myrule.semgrep-rules_php.lang.security.eval-use                         
+          Evaluating non-constant commands. This can lead to command injection.
+                                                                               
+           14┆ $res = eval($query);
+

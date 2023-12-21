@@ -1,0 +1,13 @@
+                  
+                  
+┌────────────────┐
+│ 1 Code Finding │
+└────────────────┘
+                                                                                
+    /src/192629-v1.0.0/src/CWE_79__POST__func_addslashes__Unsafe_use_untrusted_d
+  ata-script.php                                                                
+       myrule.common.xss-echoed-request       
+          Potential XSS vulnerability detected
+                                              
+           15┆ echo $tainted ;
+

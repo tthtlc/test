@@ -1,0 +1,19 @@
+                   
+                   
+┌─────────────────┐
+│ 2 Code Findings │
+└─────────────────┘
+                                                                                
+    /src/188452-v1.0.0/src/CWE_601__object-Array__func_htmlspecialchars__http_re
+  direct_url-sprintf_%s_simple_quote.php                                        
+       myrule.common.php-hardcoded-credentials
+          Hardcoded credentials detected      
+                                              
+           ▶▶┆ Autofix ▶ Use environment variables or other secure methods to   
+  handle credentials                                                            
+           15┆ $this->input[0]= 'safe' ;
+            ⋮┆----------------------------------------
+           ▶▶┆ Autofix ▶ Use environment variables or other secure methods to   
+  handle credentials                                                            
+           17┆ $this->input[2]= 'safe' ;
+

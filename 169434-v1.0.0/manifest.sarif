@@ -1,0 +1,96 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://json.schemastore.org/sarif-2.1.0.json",
+  "runs": [
+    {
+      "properties": {
+        "id": 169434,
+        "version": "1.0.0",
+        "type": "source code",
+        "status": "candidate",
+        "submissionDate": "2015-10-20",
+        "language": "php",
+        "author": "Bertrand Stivalet and Aurelien Delaitre",
+        "description": "Unsafe sample\ninput : get the UserData field of $_SESSION\nUses an email_filter via filter_var function\nconstruction : interpretation with simple quote",
+        "state": "bad"
+      },
+      "tool": {
+        "driver": {
+          "name": "SARD - SAMATE",
+          "fullName": "Software Assurance Reference Dataset Project",
+          "informationUri": "https://samate.nist.gov/SARD/",
+          "version": "5.0.0",
+          "organization": "NIST",
+          "supportedTaxonomies": [
+            {
+              "name": "CWE",
+              "index": 0
+            }
+          ]
+        }
+      },
+      "artifacts": [
+        {
+          "location": {
+            "uri": "src/CWE_95__SESSION__func_FILTER-CLEANING-email_filter__echo-interpretation_simple_quote.php"
+          },
+          "length": 1331,
+          "sourceLanguage": "php",
+          "hashes": {
+            "sha-256": "0cc8e1e874b665ba17050ac0e8d9694cb5cc53ed5d03da5763d584c1941ad13d"
+          }
+        }
+      ],
+      "taxonomies": [
+        {
+          "name": "CWE",
+          "version": "4.6",
+          "informationUri": "https://cwe.mitre.org/data/published/cwe_v4.6.pdf",
+          "downloadUri": "https://cwe.mitre.org/data/xml/cwec_v4.6.xml.zip",
+          "organization": "MITRE",
+          "shortDescription": {
+            "text": "The MITRE Common Weakness Enumeration"
+          },
+          "isComprehensive": false,
+          "taxa": [
+            {
+              "id": "95",
+              "name": "Improper Neutralization of Directives in Dynamically Evaluated Code ('Eval Injection')"
+            }
+          ]
+        }
+      ],
+      "results": [
+        {
+          "ruleId": "CWE-95",
+          "message": {
+            "text": "Improper Neutralization of Directives in Dynamically Evaluated Code ('Eval Injection')."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/CWE_95__SESSION__func_FILTER-CLEANING-email_filter__echo-interpretation_simple_quote.php",
+                  "index": 0
+                },
+                "region": {
+                  "startLine": 56
+                }
+              }
+            }
+          ],
+          "taxa": [
+            {
+              "toolComponent": {
+                "name": "CWE",
+                "index": 0
+              },
+              "id": "95",
+              "index": 0
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

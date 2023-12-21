@@ -1,0 +1,23 @@
+                   
+                   
+┌─────────────────┐
+│ 2 Code Findings │
+└─────────────────┘
+                                                                                
+    /src/195479-v1.0.0/src/CWE_79__unserialize__func_FILTER-CLEANING-full_specia
+  l_chars_filter__Use_untrusted_data_script-doublequoted_Event_Handler.php      
+       myrule.semgrep-rules_php.lang.security.unserialize-use                   
+          Calling `unserialize()` with user input in the pattern can lead to    
+  arbitrary code execution.                                                     
+          Consider using JSON or structured data approaches (e.g. Google        
+  Protocol Buffers).                                                            
+                                                                                
+           13┆ $tainted = unserialize($string);
+            ⋮┆----------------------------------------
+       myrule.semgrep-rules_php.lang.security.injection.echoed-request          
+          `Echo`ing user input risks cross-site scripting vulnerability. You    
+  should use                                                                    
+          `htmlentities()` when showing data to users.                          
+                                                                                
+           18┆ echo "<div onmouseover=\"x=\"". $tainted ."\"\>";
+

@@ -1,0 +1,15 @@
+                   
+                   
+┌─────────────────┐
+│ 2 Code Findings │
+└─────────────────┘
+                                                                                
+    /src/166767-v1.0.0/src/CWE_89__POST__CAST-func_settype_float__multiple_AS-sp
+  rintf_%u.php                                                                  
+       myrule.common.xss-echoed-request       
+          Potential XSS vulnerability detected
+                                              
+           16┆ echo "query : ". $query ."<br /><br />" ;
+            ⋮┆----------------------------------------
+           19┆ print_r($data) ;
+

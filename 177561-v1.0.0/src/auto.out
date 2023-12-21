@@ -1,0 +1,16 @@
+                  
+                  
+┌────────────────┐
+│ 1 Code Finding │
+└────────────────┘
+                                                                                
+    /src/177561-v1.0.0/src/CWE_90__object-directGet__func_str_replace_ldap_char_
+  black_list__userByMail-interpretation_simple_quote.php                        
+       php.lang.security.ldap-bind-without-password.ldap-bind-without-password  
+          Detected anonymous LDAP bind. This permits anonymous users to execute 
+  LDAP statements.                                                              
+          Consider enforcing authentication for LDAP.                           
+          Details: https://sg.run/18Rv                                          
+                                                                                
+           23┆ $r=ldap_bind($ds);
+

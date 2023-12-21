@@ -1,0 +1,23 @@
+                   
+                   
+┌─────────────────┐
+│ 2 Code Findings │
+└─────────────────┘
+                                                                                
+    /rootsrc/CWE_90__unserialize__func_preg_match-only_letters__userByCN-interpr
+  etation_simple_quote.php                                                      
+       myrule.lang.security.unserialize-use                                     
+          Calling `unserialize()` with user input in the pattern can lead to    
+  arbitrary code execution.                                                     
+          Consider using JSON or structured data approaches (e.g. Google        
+  Protocol Buffers).                                                            
+                                                                                
+            9┆ $tainted = unserialize($string);
+            ⋮┆----------------------------------------
+       myrule.lang.security.ldap-bind-without-password                          
+          Detected anonymous LDAP bind. This permits anonymous users to execute 
+  LDAP statements.                                                              
+          Consider enforcing authentication for LDAP.                           
+                                                                                
+           20┆ $r=ldap_bind($ds);
+

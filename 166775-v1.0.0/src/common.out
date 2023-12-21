@@ -1,0 +1,15 @@
+                   
+                   
+┌─────────────────┐
+│ 2 Code Findings │
+└─────────────────┘
+                                                                                
+    /src/166775-v1.0.0/src/CWE_91__POST__CAST-func_settype_float__ID_at-sprintf_
+  %s_simple_quote.php                                                           
+       myrule.common.xss-echoed-request       
+          Potential XSS vulnerability detected
+                                              
+           15┆ echo "query : ". $query ."<br /><br />" ;
+            ⋮┆----------------------------------------
+           17┆ print_r($res);
+

@@ -1,0 +1,13 @@
+                  
+                  
+┌────────────────┐
+│ 1 Code Finding │
+└────────────────┘
+                                                                                
+    /src/187479-v1.0.0/src/CWE_601__unserialize__CAST-cast_int_sort_of__header_f
+  ile_id-sprintf_%d_simple_quote.php                                            
+       myrule.common.xss-echoed-request       
+          Potential XSS vulnerability detected
+                                              
+           12┆ $var = header(sprintf("Location: pages/'%d'.php", $tainted));
+

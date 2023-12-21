@@ -1,0 +1,15 @@
+                   
+                   
+┌─────────────────┐
+│ 2 Code Findings │
+└─────────────────┘
+                                                                                
+    /rootsrc/CWE_89__unserialize__func_FILTER-CLEANING-number_float_filter__mult
+  iple_select-concatenation.php                                                 
+       myrule.xss-echoed-request              
+          Potential XSS vulnerability detected
+                                              
+           19┆ echo "query : ". $query ."<br /><br />" ;
+            ⋮┆----------------------------------------
+           22┆ print_r($data) ;
+

@@ -1,0 +1,32 @@
+                   
+                   
+┌─────────────────┐
+│ 2 Code Findings │
+└─────────────────┘
+                                                                                
+    /src/174608-v1.0.0/src/CWE_89__unserialize__func_FILTER-CLEANING-number_floa
+  t_filter__select_from_where-interpretation_simple_quote.php                   
+       php.lang.security.unserialize-use.unserialize-use                        
+          Calling `unserialize()` with user input in the pattern can lead to    
+  arbitrary code execution.                                                     
+          Consider using JSON or structured data approaches (e.g. Google        
+  Protocol Buffers).                                                            
+          Details: https://sg.run/b24E                                          
+                                                                                
+            9┆ $tainted = unserialize($string);
+            ⋮┆----------------------------------------
+       php.lang.security.injection.tainted-sql-string.tainted-sql-string        
+          User data flows into this manually-constructed SQL string. User data  
+  can be safely inserted                                                        
+          into SQL strings using prepared statements or an object-relational    
+  mapper (ORM). Manually-                                                       
+          constructed SQL strings is a possible indicator of SQL injection,     
+  which could let an                                                            
+          attacker steal or manipulate data from the database. Instead, use     
+  prepared statements                                                           
+          (`$mysqli->prepare("INSERT INTO test(id, label) VALUES (?, ?)");`) or 
+  a safe library.                                                               
+          Details: https://sg.run/lZYG                                          
+                                                                                
+           16┆ $query = "SELECT * FROM student where id=' $tainted '";
+

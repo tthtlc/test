@@ -1,0 +1,23 @@
+                   
+                   
+┌─────────────────┐
+│ 3 Code Findings │
+└─────────────────┘
+                                                                                
+    /src/181494-v1.0.0/src/CWE_95__object-indexArray__func_FILTER-VALIDATION-num
+  ber_float_filter__variable-interpretation_simple_quote.php                    
+       myrule.common.php-hardcoded-credentials
+          Hardcoded credentials detected      
+                                              
+           ▶▶┆ Autofix ▶ Use environment variables or other secure methods to   
+  handle credentials                                                            
+           15┆ $this->input['test']= 'safe' ;
+            ⋮┆----------------------------------------
+           ▶▶┆ Autofix ▶ Use environment variables or other secure methods to   
+  handle credentials                                                            
+           17┆ $this->input['trap']= 'safe' ;
+            ⋮┆----------------------------------------
+           ▶▶┆ Autofix ▶ Use environment variables or other secure methods to   
+  handle credentials                                                            
+           25┆ $tainted = "" ;
+

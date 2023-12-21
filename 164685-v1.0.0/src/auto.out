@@ -1,0 +1,14 @@
+                  
+                  
+┌────────────────┐
+│ 1 Code Finding │
+└────────────────┘
+                                                                                
+    /src/164685-v1.0.0/src/CWE_78__popen__func_FILTER-VALIDATION-email_filter__c
+  at-interpretation_simple_quote.php                                            
+       php.lang.security.exec-use.exec-use                                    
+          Executing non-constant commands. This can lead to command injection.
+          Details: https://sg.run/5Q1j                                        
+                                                                              
+           17┆ $ret = system($query);
+

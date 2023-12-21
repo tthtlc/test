@@ -1,0 +1,33 @@
+                   
+                   
+┌─────────────────┐
+│ 3 Code Findings │
+└─────────────────┘
+                                                                                
+    /src/162584-v1.0.0/src/CWE_78__GET__func_preg_match-only_numbers__find_size-
+  concatenation_simple_quote.php                                                
+       myrule.common.php-hardcoded-credentials
+          Hardcoded credentials detected      
+                                              
+           ▶▶┆ Autofix ▶ Use environment variables or other secure methods to   
+  handle credentials                                                            
+            9┆ $re = "/^[0-9]*$/";
+            ⋮┆----------------------------------------
+           ▶▶┆ Autofix ▶ Use environment variables or other secure methods to   
+  handle credentials                                                            
+           14┆ $tainted = "";
+            ⋮┆----------------------------------------
+       myrule.common.tainted-command-injection                                  
+          An attacker can execute arbitrary commands, potentially gaining       
+  complete control of the                                                       
+          system. To prevent this vulnerability, avoid executing OS commands    
+  with user input. If this                                                      
+          is unavoidable, validate and sanitize the user input, and use safe    
+  methods for executing the                                                     
+          commands. In PHP, it is possible to use `escapeshellcmd(...)` and     
+  `escapeshellarg(...)` to                                                      
+          correctly sanitize input that is used respectively as system commands 
+  or command arguments.                                                         
+                                                                                
+           17┆ $ret = system($query);
+

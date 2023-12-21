@@ -1,0 +1,14 @@
+                  
+                  
+┌────────────────┐
+│ 1 Code Finding │
+└────────────────┘
+                                                                                
+    /src/160262-v1.0.0/src/CWE_95__exec__func_floatval__variable-concatenation_s
+  imple_quote.php                                                               
+       php.lang.security.eval-use.eval-use                                     
+          Evaluating non-constant commands. This can lead to command injection.
+          Details: https://sg.run/J9AP                                         
+                                                                               
+           13┆ $res = eval($query);
+

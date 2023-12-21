@@ -1,0 +1,17 @@
+                  
+                  
+┌────────────────┐
+│ 1 Code Finding │
+└────────────────┘
+                                                                                
+    /src/177843-v1.0.0/src/CWE_89__object-classicGet__func_FILTER-CLEANING-email
+  _filter__join-interpretation_simple_quote.php                                 
+       myrule.sqlinj.sql-injection-php-potential-apps3c                         
+          Detected a string starting with a SQL operation with a concatenated   
+  value. This could lead                                                        
+          to SQL injection if variables in the SQL  statement are not properly  
+  sanitized.                                                                    
+                                                                                
+           24┆ $query = "SELECT lastname, firstname FROM drivers, vehicles WHERE
+  drivers.id = vehicles.ownerid AND vehicles.tag=' $tainted '";                 
+

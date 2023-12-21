@@ -1,0 +1,15 @@
+                  
+                  
+┌────────────────┐
+│ 1 Code Finding │
+└────────────────┘
+                                                                                
+    /src/191136-v1.0.0/src/CWE_79__GET__func_FILTER-CLEANING-number_int_filter__
+  Use_untrusted_data_propertyValue_CSS-quoted_Property_Value.php                
+       myrule.semgrep-rules_php.lang.security.injection.echoed-request          
+          `Echo`ing user input risks cross-site scripting vulnerability. You    
+  should use                                                                    
+          `htmlentities()` when showing data to users.                          
+                                                                                
+           19┆ echo "body { color :\'". $tainted ."\' ; }" ;
+

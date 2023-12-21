@@ -1,0 +1,23 @@
+                   
+                   
+┌─────────────────┐
+│ 3 Code Findings │
+└─────────────────┘
+                                                                                
+    /src/186168-v1.0.0/src/CWE_601__proc_open__func_preg_match-no_filtering__htt
+  p_redirect_file_name-concatenation_simple_quote.php                           
+       myrule.common.php-hardcoded-credentials
+          Hardcoded credentials detected      
+                                              
+           ▶▶┆ Autofix ▶ Use environment variables or other secure methods to   
+  handle credentials                                                            
+           13┆ $cwd = '/tmp';
+            ⋮┆----------------------------------------
+           ▶▶┆ Autofix ▶ Use environment variables or other secure methods to   
+  handle credentials                                                            
+           21┆ $re = "/^.*$/";
+            ⋮┆----------------------------------------
+           ▶▶┆ Autofix ▶ Use environment variables or other secure methods to   
+  handle credentials                                                            
+           26┆ $tainted = "";
+

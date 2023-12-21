@@ -1,0 +1,47 @@
+                   
+                   
+┌─────────────────┐
+│ 3 Code Findings │
+└─────────────────┘
+                                                                                
+    /src/175614-v1.0.0/src/CWE_89__unserialize__func_preg_replace__join-interpre
+  tation_simple_quote.php                                                       
+       myrule.sqlinj.sql-injection-php-potential-apps3c                         
+          Detected a string starting with a SQL operation with a concatenated   
+  value. This could lead                                                        
+          to SQL injection if variables in the SQL  statement are not properly  
+  sanitized.                                                                    
+                                                                                
+           12┆ $query = "SELECT lastname, firstname FROM drivers, vehicles WHERE
+  drivers.id = vehicles.ownerid AND vehicles.tag=' $tainted '";                 
+            ⋮┆----------------------------------------
+       myrule.sqlinj.tainted-sql-string                                         
+          User data flows into this manually-constructed SQL string. User data  
+  can be safely inserted                                                        
+          into SQL strings using prepared statements or an object-relational    
+  mapper (ORM). Manually-                                                       
+          constructed SQL strings is a possible indicator of SQL injection,     
+  which could let an                                                            
+          attacker steal or manipulate data from the database. Instead, use     
+  prepared statements                                                           
+          (`$mysqli->prepare("INSERT INTO test(id, label) VALUES (?, ?)");`) or 
+  a safe library.                                                               
+                                                                                
+           12┆ $query = "SELECT lastname, firstname FROM drivers, vehicles WHERE
+  drivers.id = vehicles.ownerid AND vehicles.tag=' $tainted '";                 
+            ⋮┆----------------------------------------
+       myrule.sqlinj.tainted-sql-string2                                        
+          User data flows into this manually-constructed SQL string. User data  
+  can be safely inserted                                                        
+          into SQL strings using prepared statements or an object-relational    
+  mapper (ORM). Manually-                                                       
+          constructed SQL strings is a possible indicator of SQL injection,     
+  which could let an                                                            
+          attacker steal or manipulate data from the database. Instead, use     
+  prepared statements                                                           
+          (`$mysqli->prepare("INSERT INTO test(id, label) VALUES (?, ?)");`) or 
+  a safe library.                                                               
+                                                                                
+           12┆ $query = "SELECT lastname, firstname FROM drivers, vehicles WHERE
+  drivers.id = vehicles.ownerid AND vehicles.tag=' $tainted '";                 
+

@@ -1,0 +1,19 @@
+                   
+                   
+┌─────────────────┐
+│ 2 Code Findings │
+└─────────────────┘
+                                                                                
+    /src/169290-v1.0.0/src/CWE_95__SESSION__func_preg_match-only_numbers__variab
+  le-interpretation_simple_quote.php                                            
+       myrule.common.php-hardcoded-credentials
+          Hardcoded credentials detected      
+                                              
+           ▶▶┆ Autofix ▶ Use environment variables or other secure methods to   
+  handle credentials                                                            
+            9┆ $re = "/^[0-9]*$/";
+            ⋮┆----------------------------------------
+           ▶▶┆ Autofix ▶ Use environment variables or other secure methods to   
+  handle credentials                                                            
+           14┆ $tainted = "";
+

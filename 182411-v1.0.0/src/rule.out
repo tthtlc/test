@@ -1,0 +1,15 @@
+                  
+                  
+┌────────────────┐
+│ 1 Code Finding │
+└────────────────┘
+                                                                                
+    /src/182411-v1.0.0/src/CWE_90__object-indexArray__ternary_white_list__not_na
+  me-concatenation_simple_quote.php                                             
+       myrule.semgrep-rules_php.lang.security.ldap-bind-without-password        
+          Detected anonymous LDAP bind. This permits anonymous users to execute 
+  LDAP statements.                                                              
+          Consider enforcing authentication for LDAP.                           
+                                                                                
+           25┆ $r=ldap_bind($ds);
+

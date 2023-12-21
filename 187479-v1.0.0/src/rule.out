@@ -1,0 +1,26 @@
+                   
+                   
+┌─────────────────┐
+│ 2 Code Findings │
+└─────────────────┘
+                                                                                
+    /src/187479-v1.0.0/src/CWE_601__unserialize__CAST-cast_int_sort_of__header_f
+  ile_id-sprintf_%d_simple_quote.php                                            
+       myrule.semgrep-rules_php.lang.security.unserialize-use                   
+          Calling `unserialize()` with user input in the pattern can lead to    
+  arbitrary code execution.                                                     
+          Consider using JSON or structured data approaches (e.g. Google        
+  Protocol Buffers).                                                            
+                                                                                
+            9┆ $tainted = unserialize($string);
+            ⋮┆----------------------------------------
+       myrule.semgrep-rules_php.lang.security.non-literal-header                
+          Using user input when setting headers with `header()` is potentially  
+  dangerous. This could                                                         
+          allow an attacker to inject a new line and add a new header into the  
+  response. This is                                                             
+          called HTTP response splitting. To fix, do not allow whitespace inside
+  `header()`: '[^\s]+'.                                                         
+                                                                                
+           12┆ $var = header(sprintf("Location: pages/'%d'.php", $tainted));
+

@@ -1,0 +1,19 @@
+                   
+                   
+┌─────────────────┐
+│ 2 Code Findings │
+└─────────────────┘
+                                                                                
+    /src/169039-v1.0.0/src/CWE_91__proc_open__ternary_white_list__username_text-
+  sprintf_%s_simple_quote.php                                                   
+       myrule.common.php-hardcoded-credentials
+          Hardcoded credentials detected      
+                                              
+           ▶▶┆ Autofix ▶ Use environment variables or other secure methods to   
+  handle credentials                                                            
+           13┆ $cwd = '/tmp';
+            ⋮┆----------------------------------------
+           ▶▶┆ Autofix ▶ Use environment variables or other secure methods to   
+  handle credentials                                                            
+           21┆ $tainted = $tainted  == 'safe1' ? 'safe1' : 'safe2';
+

@@ -1,0 +1,14 @@
+                  
+                  
+┌────────────────┐
+│ 1 Code Finding │
+└────────────────┘
+                                                                                
+    /src/159610-v1.0.0/src/CWE_78__exec__func_FILTER-CLEANING-special_chars_filt
+  er__cat-sprintf_%s_simple_quote.php                                           
+       php.lang.security.exec-use.exec-use                                    
+          Executing non-constant commands. This can lead to command injection.
+          Details: https://sg.run/5Q1j                                        
+                                                                              
+           16┆ $ret = system($query);
+

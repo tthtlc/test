@@ -1,0 +1,22 @@
+                   
+                   
+┌─────────────────┐
+│ 2 Code Findings │
+└─────────────────┘
+                                                                                
+    /rootsrc/CWE_90__backticks__func_addslashes__userByMail-interpretation_simpl
+  e_quote.php                                                                   
+       php.lang.security.backticks-use.backticks-use                  
+          Backticks use may lead to command injection vulnerabilities.
+          Details: https://sg.run/4xj9                                
+                                                                      
+            8┆ $tainted = `cat /tmp/tainted.txt`;
+            ⋮┆----------------------------------------
+       php.lang.security.ldap-bind-without-password.ldap-bind-without-password  
+          Detected anonymous LDAP bind. This permits anonymous users to execute 
+  LDAP statements.                                                              
+          Consider enforcing authentication for LDAP.                           
+          Details: https://sg.run/18Rv                                          
+                                                                                
+           13┆ $r=ldap_bind($ds);
+

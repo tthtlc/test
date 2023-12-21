@@ -1,0 +1,14 @@
+                  
+                  
+┌────────────────┐
+│ 1 Code Finding │
+└────────────────┘
+                                                                                
+    /src/158811-v1.0.0/src/CWE_91__backticks__func_mysql_real_escape_string__ID_
+  at-sprintf_%u.php                                                             
+       php.lang.security.backticks-use.backticks-use                  
+          Backticks use may lead to command injection vulnerabilities.
+          Details: https://sg.run/4xj9                                
+                                                                      
+            8┆ $tainted = `cat /tmp/tainted.txt`;
+

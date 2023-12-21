@@ -1,0 +1,13 @@
+                  
+                  
+┌────────────────┐
+│ 1 Code Finding │
+└────────────────┘
+                                                                                
+    /rootsrc/CWE_89__backticks__CAST-cast_int_sort_of__multiple_select-concatena
+  tion.php                                                                      
+       myrule.lang.security.backticks-use                             
+          Backticks use may lead to command injection vulnerabilities.
+                                                                      
+            8┆ $tainted = `cat /tmp/tainted.txt`;
+

@@ -1,0 +1,17 @@
+                  
+                  
+┌────────────────┐
+│ 1 Code Finding │
+└────────────────┘
+                                                                                
+    /src/195619-v1.0.0/src/CWE_79__unserialize__func_FILTER-VALIDATION-number_in
+  t_filter__Use_untrusted_data_attribute-simple_Quote_Attr.php                  
+       php.lang.security.unserialize-use.unserialize-use                        
+          Calling `unserialize()` with user input in the pattern can lead to    
+  arbitrary code execution.                                                     
+          Consider using JSON or structured data approaches (e.g. Google        
+  Protocol Buffers).                                                            
+          Details: https://sg.run/b24E                                          
+                                                                                
+           13┆ $tainted = unserialize($string);
+

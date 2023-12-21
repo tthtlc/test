@@ -1,0 +1,18 @@
+                  
+                  
+┌────────────────┐
+│ 1 Code Finding │
+└────────────────┘
+                                                                                
+    /src/186639-v1.0.0/src/CWE_601__SESSION__func_htmlentities__header_url-sprin
+  tf_%s_simple_quote.php                                                        
+       myrule.semgrep-rules_php.lang.security.non-literal-header                
+          Using user input when setting headers with `header()` is potentially  
+  dangerous. This could                                                         
+          allow an attacker to inject a new line and add a new header into the  
+  response. This is                                                             
+          called HTTP response splitting. To fix, do not allow whitespace inside
+  `header()`: '[^\s]+'.                                                         
+                                                                                
+           11┆ $var = header(sprintf("Location: '%s'", $tainted));
+

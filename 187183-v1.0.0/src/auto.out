@@ -1,0 +1,19 @@
+                  
+                  
+┌────────────────┐
+│ 1 Code Finding │
+└────────────────┘
+                                                                                
+    /src/187183-v1.0.0/src/CWE_601__system__CAST-cast_int_sort_of2__header_file_
+  id-interpretation_simple_quote.php                                            
+       php.lang.security.non-literal-header.non-literal-header                  
+          Using user input when setting headers with `header()` is potentially  
+  dangerous. This could                                                         
+          allow an attacker to inject a new line and add a new header into the  
+  response. This is                                                             
+          called HTTP response splitting. To fix, do not allow whitespace inside
+  `header()`: '[^\s]+'.                                                         
+          Details: https://sg.run/9rL8                                          
+                                                                                
+           10┆ $var = header("Location: pages/'$tainted'.php");
+

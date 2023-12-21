@@ -1,0 +1,16 @@
+                  
+                  
+┌────────────────┐
+│ 1 Code Finding │
+└────────────────┘
+                                                                                
+    /rootsrc/CWE_89__unserialize__func_FILTER-VALIDATION-number_int_filter__sele
+  ct_from_where-sprintf_%u.php                                                  
+       myrule.lang.security.unserialize-use                                     
+          Calling `unserialize()` with user input in the pattern can lead to    
+  arbitrary code execution.                                                     
+          Consider using JSON or structured data approaches (e.g. Google        
+  Protocol Buffers).                                                            
+                                                                                
+            9┆ $tainted = unserialize($string);
+

@@ -1,0 +1,15 @@
+                  
+                  
+┌────────────────┐
+│ 1 Code Finding │
+└────────────────┘
+                                                                                
+    /src/177998-v1.0.0/src/CWE_98__object-classicGet__func_FILTER-CLEANING-numbe
+  r_int_filter__require_file_id-interpretation_simple_quote.php                 
+       myrule.common.php-hardcoded-credentials
+          Hardcoded credentials detected      
+                                              
+           ▶▶┆ Autofix ▶ Use environment variables or other secure methods to   
+  handle credentials                                                            
+           23┆ $tainted = "" ;
+

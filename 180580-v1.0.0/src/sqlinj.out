@@ -1,0 +1,16 @@
+                  
+                  
+┌────────────────┐
+│ 1 Code Finding │
+└────────────────┘
+                                                                                
+    /src/180580-v1.0.0/src/CWE_89__object-Array__func_mysql_real_escape_string__
+  select_from_where-interpretation.php                                          
+       myrule.sqlinj.sql-injection-php-potential-apps3c                         
+          Detected a string starting with a SQL operation with a concatenated   
+  value. This could lead                                                        
+          to SQL injection if variables in the SQL  statement are not properly  
+  sanitized.                                                                    
+                                                                                
+           23┆ $query = "SELECT * FROM student where id= $tainted ";
+

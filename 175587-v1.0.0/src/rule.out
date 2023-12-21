@@ -1,0 +1,27 @@
+                   
+                   
+┌─────────────────┐
+│ 2 Code Findings │
+└─────────────────┘
+                                                                                
+    /src/175587-v1.0.0/src/CWE_98__unserialize__func_preg_replace__include_file_
+  name-sprintf_%s_simple_quote.php                                              
+       myrule.semgrep-rules_php.lang.security.unserialize-use                   
+          Calling `unserialize()` with user input in the pattern can lead to    
+  arbitrary code execution.                                                     
+          Consider using JSON or structured data approaches (e.g. Google        
+  Protocol Buffers).                                                            
+                                                                                
+            9┆ $tainted = unserialize($string);
+            ⋮┆----------------------------------------
+       myrule.semgrep-rules_php.lang.security.file-inclusion                    
+          Detected non-constant file inclusion. This can lead to local file     
+  inclusion (LFI) or remote                                                     
+          file inclusion (RFI) if user input reaches this statement. LFI and RFI
+  could lead to                                                                 
+          sensitive files being obtained by attackers. Instead, explicitly      
+  specify what to include. If                                                   
+          that is not a viable solution, validate user input thoroughly.        
+                                                                                
+           12┆ $var = include(sprintf("'%s'.php", $tainted));
+

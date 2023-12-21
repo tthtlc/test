@@ -1,0 +1,13 @@
+                  
+                  
+┌────────────────┐
+│ 1 Code Finding │
+└────────────────┘
+                                                                                
+    /src/157642-v1.0.0/src/CWE_91__backticks__func_preg_match-letters_numbers__u
+  sername-sprintf_%s_simple_quote.php                                           
+       myrule.semgrep-rules_php.lang.security.backticks-use           
+          Backticks use may lead to command injection vulnerabilities.
+                                                                      
+            8┆ $tainted = `cat /tmp/tainted.txt`;
+

@@ -1,0 +1,13 @@
+                  
+                  
+┌────────────────┐
+│ 1 Code Finding │
+└────────────────┘
+                                                                                
+    /src/195678-v1.0.0/src/CWE_79__unserialize__CAST-cast_int__Unsafe_use_untrus
+  ted_data-style.php                                                            
+       myrule.common.xss-echoed-request       
+          Potential XSS vulnerability detected
+                                              
+           16┆ echo $tainted ;
+

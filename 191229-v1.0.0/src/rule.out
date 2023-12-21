@@ -1,0 +1,15 @@
+                  
+                  
+┌────────────────┐
+│ 1 Code Finding │
+└────────────────┘
+                                                                                
+    /rootsrc/CWE_79__GET__CAST-cast_float__Use_untrusted_data_attribute-unquoted
+  _Attr.php                                                                     
+       myrule.lang.security.injection.echoed-request                            
+          `Echo`ing user input risks cross-site scripting vulnerability. You    
+  should use                                                                    
+          `htmlentities()` when showing data to users.                          
+                                                                                
+           14┆ echo "<div id=". $tainted .">content</div>" ;
+

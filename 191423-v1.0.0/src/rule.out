@@ -1,0 +1,15 @@
+                  
+                  
+┌────────────────┐
+│ 1 Code Finding │
+└────────────────┘
+                                                                                
+    /src/191423-v1.0.0/src/CWE_79__GET__func_floatval__Use_untrusted_data_script
+  -side_Quoted_Expr.php                                                         
+       myrule.semgrep-rules_php.lang.security.injection.echoed-request          
+          `Echo`ing user input risks cross-site scripting vulnerability. You    
+  should use                                                                    
+          `htmlentities()` when showing data to users.                          
+                                                                                
+           14┆ echo "x='". $tainted ."'" ;
+

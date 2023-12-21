@@ -1,0 +1,15 @@
+                  
+                  
+┌────────────────┐
+│ 1 Code Finding │
+└────────────────┘
+                                                                                
+    /src/191476-v1.0.0/src/CWE_79__GET__func_intval__Unsafe_use_untrusted_data-a
+  ttribute_Name.php                                                             
+       myrule.semgrep-rules_php.lang.security.injection.echoed-request          
+          `Echo`ing user input risks cross-site scripting vulnerability. You    
+  should use                                                                    
+          `htmlentities()` when showing data to users.                          
+                                                                                
+           13┆ echo "<div ". $tainted ."= bob />" ;
+

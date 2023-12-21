@@ -1,0 +1,22 @@
+                   
+                   
+┌─────────────────┐
+│ 2 Code Findings │
+└─────────────────┘
+                                                                          
+    /rootsrc/CWE_862_Fopen__unserialize__whitelist_using_array__fopen.php 
+       php.lang.security.unserialize-use.unserialize-use                        
+          Calling `unserialize()` with user input in the pattern can lead to    
+  arbitrary code execution.                                                     
+          Consider using JSON or structured data approaches (e.g. Google        
+  Protocol Buffers).                                                            
+          Details: https://sg.run/b24E                                          
+                                                                                
+           10┆ $tainted = unserialize($string);
+            ⋮┆----------------------------------------
+       php.lang.security.injection.tainted-filename.tainted-filename      
+          File name based on user input risks server-side request forgery.
+          Details: https://sg.run/Ayqp                                    
+                                                                          
+           18┆ $var = fopen($tainted, "r");
+

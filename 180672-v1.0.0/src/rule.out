@@ -1,0 +1,13 @@
+                  
+                  
+┌────────────────┐
+│ 1 Code Finding │
+└────────────────┘
+                                                                                
+    /rootsrc/CWE_78__object-Array__func_preg_replace2__cat-interpretation_simple
+  _quote.php                                                                    
+       myrule.lang.security.exec-use                                          
+          Executing non-constant commands. This can lead to command injection.
+                                                                              
+           24┆ $ret = system($query);
+

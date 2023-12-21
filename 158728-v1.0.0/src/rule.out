@@ -1,0 +1,18 @@
+                   
+                   
+┌─────────────────┐
+│ 2 Code Findings │
+└─────────────────┘
+                                                                                
+    /src/158728-v1.0.0/src/CWE_78__backticks__func_intval__find_size-sprintf_%s_
+  simple_quote.php                                                              
+       myrule.semgrep-rules_php.lang.security.backticks-use           
+          Backticks use may lead to command injection vulnerabilities.
+                                                                      
+            8┆ $tainted = `cat /tmp/tainted.txt`;
+            ⋮┆----------------------------------------
+       myrule.semgrep-rules_php.lang.security.exec-use                        
+          Executing non-constant commands. This can lead to command injection.
+                                                                              
+           11┆ $ret = system($query);
+

@@ -1,0 +1,15 @@
+                  
+                  
+┌────────────────┐
+│ 1 Code Finding │
+└────────────────┘
+                                                                                
+    /src/177832-v1.0.0/src/CWE_90__object-classicGet__func_FILTER-CLEANING-email
+  _filter__not_name-sprintf_%s_simple_quote.php                                 
+       myrule.semgrep-rules_php.lang.security.ldap-bind-without-password        
+          Detected anonymous LDAP bind. This permits anonymous users to execute 
+  LDAP statements.                                                              
+          Consider enforcing authentication for LDAP.                           
+                                                                                
+           27┆ $r=ldap_bind($ds);
+

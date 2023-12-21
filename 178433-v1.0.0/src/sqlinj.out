@@ -1,0 +1,16 @@
+                  
+                  
+┌────────────────┐
+│ 1 Code Finding │
+└────────────────┘
+                                                                                
+    /src/178433-v1.0.0/src/CWE_89__object-classicGet__CAST-cast_int_sort_of2__se
+  lect_from_where-concatenation.php                                             
+       myrule.sqlinj.sql-injection-php-potential-apps3c                         
+          Detected a string starting with a SQL operation with a concatenated   
+  value. This could lead                                                        
+          to SQL injection if variables in the SQL  statement are not properly  
+  sanitized.                                                                    
+                                                                                
+           20┆ $query = "SELECT * FROM student where id=". $tainted . "";
+

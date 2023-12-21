@@ -1,0 +1,20 @@
+                   
+                   
+┌─────────────────┐
+│ 2 Code Findings │
+└─────────────────┘
+                                                                                
+    /src/158260-v1.0.0/src/CWE_78__backticks__CAST-cast_int_sort_of__find_size-s
+  printf_%s_simple_quote.php                                                    
+       php.lang.security.backticks-use.backticks-use                  
+          Backticks use may lead to command injection vulnerabilities.
+          Details: https://sg.run/4xj9                                
+                                                                      
+            8┆ $tainted = `cat /tmp/tainted.txt`;
+            ⋮┆----------------------------------------
+       php.lang.security.exec-use.exec-use                                    
+          Executing non-constant commands. This can lead to command injection.
+          Details: https://sg.run/5Q1j                                        
+                                                                              
+           11┆ $ret = system($query);
+

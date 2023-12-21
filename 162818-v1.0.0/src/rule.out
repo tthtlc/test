@@ -1,0 +1,20 @@
+                   
+                   
+┌─────────────────┐
+│ 2 Code Findings │
+└─────────────────┘
+                                                                                
+    /src/162818-v1.0.0/src/CWE_78__GET__func_FILTER-CLEANING-magic_quotes_filter
+  __ls-concatenation_simple_quote.php                                           
+       myrule.semgrep-rules_php.lang.security.exec-use                        
+          Executing non-constant commands. This can lead to command injection.
+                                                                              
+           13┆ $ret = system($query);
+            ⋮┆----------------------------------------
+       myrule.semgrep-rules_php.lang.security.tmp.tainted-exec                  
+          Executing non-constant commands. This can lead to command injection.  
+  You should use                                                                
+          `escapeshellarg()` when using command.                                
+                                                                                
+           13┆ $ret = system($query);
+

@@ -1,0 +1,16 @@
+                  
+                  
+┌────────────────┐
+│ 1 Code Finding │
+└────────────────┘
+                                                                                
+    /src/164594-v1.0.0/src/CWE_89__popen__func_FILTER-CLEANING-number_int_filter
+  __select_from_where-interpretation_simple_quote.php                           
+       myrule.sqlinj.sql-injection-php-potential-apps3c                         
+          Detected a string starting with a SQL operation with a concatenated   
+  value. This could lead                                                        
+          to SQL injection if variables in the SQL  statement are not properly  
+  sanitized.                                                                    
+                                                                                
+           16┆ $query = "SELECT * FROM student where id=' $tainted '";
+

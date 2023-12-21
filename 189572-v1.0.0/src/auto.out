@@ -1,0 +1,14 @@
+                  
+                  
+┌────────────────┐
+│ 1 Code Finding │
+└────────────────┘
+                                                                                
+    /rootsrc/CWE_79__backticks__func_htmlspecialchars__Use_untrusted_data_attrib
+  ute-Double_Quote_Attr.php                                                     
+       php.lang.security.backticks-use.backticks-use                  
+          Backticks use may lead to command injection vulnerabilities.
+          Details: https://sg.run/4xj9                                
+                                                                      
+           12┆ $tainted = `cat /tmp/tainted.txt`;
+

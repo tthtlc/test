@@ -1,0 +1,13 @@
+                  
+                  
+┌────────────────┐
+│ 1 Code Finding │
+└────────────────┘
+                                                                                
+    /src/171009-v1.0.0/src/CWE_78__shell_exec__func_escapeshellarg__ls-interpret
+  ation_simple_quote.php                                                        
+       myrule.semgrep-rules_php.lang.security.exec-use                        
+          Executing non-constant commands. This can lead to command injection.
+                                                                              
+           12┆ $ret = system($query);
+

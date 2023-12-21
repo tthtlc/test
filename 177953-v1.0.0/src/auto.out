@@ -1,0 +1,14 @@
+                  
+                  
+┌────────────────┐
+│ 1 Code Finding │
+└────────────────┘
+                                                                                
+    /rootsrc/CWE_95__object-classicGet__func_FILTER-CLEANING-number_float_filter
+  __variable-concatenation_simple_quote.php                                     
+       php.lang.security.eval-use.eval-use                                     
+          Evaluating non-constant commands. This can lead to command injection.
+          Details: https://sg.run/J9AP                                         
+                                                                               
+           25┆ $res = eval($query);
+

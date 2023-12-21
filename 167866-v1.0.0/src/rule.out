@@ -1,0 +1,15 @@
+                  
+                  
+┌────────────────┐
+│ 1 Code Finding │
+└────────────────┘
+                                                                                
+    /rootsrc/CWE_90__proc_open__func_FILTER-CLEANING-magic_quotes_filter__userBy
+  Mail-sprintf_%s_simple_quote.php                                              
+       myrule.lang.security.ldap-bind-without-password                          
+          Detected anonymous LDAP bind. This permits anonymous users to execute 
+  LDAP statements.                                                              
+          Consider enforcing authentication for LDAP.                           
+                                                                                
+           27┆ $r=ldap_bind($ds);
+

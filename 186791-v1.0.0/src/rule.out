@@ -1,0 +1,18 @@
+                  
+                  
+┌────────────────┐
+│ 1 Code Finding │
+└────────────────┘
+                                                                                
+    /rootsrc/CWE_601__shell_exec__func_FILTER-CLEANING-full_special_chars_filter
+  __header_file_name-concatenation_simple_quote.php                             
+       myrule.lang.security.non-literal-header                                  
+          Using user input when setting headers with `header()` is potentially  
+  dangerous. This could                                                         
+          allow an attacker to inject a new line and add a new header into the  
+  response. This is                                                             
+          called HTTP response splitting. To fix, do not allow whitespace inside
+  `header()`: '[^\s]+'.                                                         
+                                                                                
+           13┆ $var = header("'Location: " . $tainted .".php'");
+

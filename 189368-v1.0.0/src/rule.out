@@ -1,0 +1,13 @@
+                  
+                  
+┌────────────────┐
+│ 1 Code Finding │
+└────────────────┘
+                                                                                
+    /rootsrc/CWE_79__backticks__CAST-cast_float_sort_of__Use_untrusted_data_scri
+  pt-doublequoted_Event_Handler.php                                             
+       myrule.lang.security.backticks-use                             
+          Backticks use may lead to command injection vulnerabilities.
+                                                                      
+           12┆ $tainted = `cat /tmp/tainted.txt`;
+

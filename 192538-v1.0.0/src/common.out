@@ -1,0 +1,13 @@
+                  
+                  
+┌────────────────┐
+│ 1 Code Finding │
+└────────────────┘
+                                                                                
+    /rootsrc/CWE_79__POST__CAST-cast_int__Use_untrusted_data_script-quoted_Event
+  _Handler.php                                                                  
+       myrule.xss-echoed-request              
+          Potential XSS vulnerability detected
+                                              
+           14┆ echo "<div onmouseover=\"x='". $tainted ."'\>";
+

@@ -1,0 +1,13 @@
+                  
+                  
+┌────────────────┐
+│ 1 Code Finding │
+└────────────────┘
+                                                                                
+    /src/181494-v1.0.0/src/CWE_95__object-indexArray__func_FILTER-VALIDATION-num
+  ber_float_filter__variable-interpretation_simple_quote.php                    
+       myrule.semgrep-rules_php.lang.security.eval-use                         
+          Evaluating non-constant commands. This can lead to command injection.
+                                                                               
+           27┆ $res = eval($query);
+

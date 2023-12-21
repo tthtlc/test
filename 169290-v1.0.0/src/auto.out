@@ -1,0 +1,14 @@
+                  
+                  
+┌────────────────┐
+│ 1 Code Finding │
+└────────────────┘
+                                                                                
+    /src/169290-v1.0.0/src/CWE_95__SESSION__func_preg_match-only_numbers__variab
+  le-interpretation_simple_quote.php                                            
+       php.lang.security.eval-use.eval-use                                     
+          Evaluating non-constant commands. This can lead to command injection.
+          Details: https://sg.run/J9AP                                         
+                                                                               
+           17┆ $res = eval($query);
+

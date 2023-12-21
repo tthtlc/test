@@ -1,0 +1,23 @@
+                   
+                   
+┌─────────────────┐
+│ 2 Code Findings │
+└─────────────────┘
+                                                                                
+    /rootsrc/CWE_79__unserialize__func_FILTER-CLEANING-number_float_filter__Use_
+  untrusted_data_script-window_SetInterval.php                                  
+       myrule.lang.security.unserialize-use                                     
+          Calling `unserialize()` with user input in the pattern can lead to    
+  arbitrary code execution.                                                     
+          Consider using JSON or structured data approaches (e.g. Google        
+  Protocol Buffers).                                                            
+                                                                                
+           13┆ $tainted = unserialize($string);
+            ⋮┆----------------------------------------
+       myrule.lang.security.injection.echoed-request                            
+          `Echo`ing user input risks cross-site scripting vulnerability. You    
+  should use                                                                    
+          `htmlentities()` when showing data to users.                          
+                                                                                
+           21┆ echo "window.setInterval('". $tainted ."');" ;
+

@@ -1,0 +1,19 @@
+                   
+                   
+┌─────────────────┐
+│ 2 Code Findings │
+└─────────────────┘
+                                                                                
+    /src/198359-v1.0.0/src/CWE_79__object-indexArray__func_floatval__Use_untrust
+  ed_data_propertyValue_CSS-double_Quoted_Property_Value.php                    
+       myrule.common.php-hardcoded-credentials
+          Hardcoded credentials detected      
+                                              
+           ▶▶┆ Autofix ▶ Use environment variables or other secure methods to   
+  handle credentials                                                            
+           19┆ $this->input['test']= 'safe' ;
+            ⋮┆----------------------------------------
+           ▶▶┆ Autofix ▶ Use environment variables or other secure methods to   
+  handle credentials                                                            
+           21┆ $this->input['trap']= 'safe' ;
+
